@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Get equipment by area</h1>
+    <form action="/equipment_in_area/get_equipment_by_area/" method="POST">
+        <label for="area_id">Area ID:</label>
+        <input type="text" id="area_id" name="area_id"><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <ul>
+        {% for row in data %}
+        <li>{{ row }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/equipment_in_area/">Return to areas and equipment</a>
+</body>
+</html>

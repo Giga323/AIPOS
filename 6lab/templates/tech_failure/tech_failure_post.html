@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create production area</title>
+</head>
+<body>
+  <h1>Create production area</h1>
+    <form action="/tech_failure/post/" method="POST">
+        <label for="cause">Cause:</label>
+        <input type="text" id="cause" name="cause"><br><br>
+
+        <label for="result">Result:</label>
+        <input type="text" id="result" name="result"><br><br>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data"><br><br>
+
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" id="employee_id" name="employee_id"><br><br>
+
+        <label for="equipment_id">Equipment ID:</label>
+        <input type="text" id="equipment_id" name="equipment_id"><br><br>
+
+
+        <button type="submit">Send</button>
+    </form>
+
+<a href="/tech_failure/">Return to tech failures</a>
+</body>
+</html>

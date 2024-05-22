@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update tech inspection page</title>
+</head>
+<body>
+  <h1>Update Tech inspection</h1>
+    <form action="/production_area/update_production_area/" method="POST">
+        <label for="tech_failure_id">Tech inspection ID:</label>
+        <input type="text" id="tech_failure_id" name="tech_failure_id"><br><br>
+
+        <label for="cause">Cause of tech inspection:</label>
+        <input type="text" id="cause" name="cause"><br><br>
+
+        <label for="result">Result of tech inspection:</label>
+        <input type="text" id="result" name="result"><br><br>
+
+        <label for="data">Data of tech inspection:</label>
+        <input type="date" id="data" name="data"><br><br>
+
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" id="employee_id" name="employee_id"><br><br>
+
+        <label for="equipment_id">Equipment ID:</label>
+        <input type="text" id="equipment_id" name="equipment_id"><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <a href="/tech_inspection/">Return to tech inspections</a>
+</body>
+</html>

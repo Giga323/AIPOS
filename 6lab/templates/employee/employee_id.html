@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/employees/get_employee/" method="POST">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id"><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <ul>
+        {{ data }}
+    </ul>
+
+    <a href="/employees/">Return to employees</a>
+</body>
+</html>

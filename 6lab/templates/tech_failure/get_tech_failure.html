@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Find tech failure by ID</h1>
+    <form action="/tech_failure/get_tech_failure/" method="POST">
+        <label for="tech_failure_id">Tech failure ID:</label>
+        <input type="text" id="tech_failure_id" name="tech_failure_id"><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <ul>
+        {{ data }}
+    </ul>
+
+    <a href="/tech_failure/">Return to tech failures</a>
+</body>
+</html>

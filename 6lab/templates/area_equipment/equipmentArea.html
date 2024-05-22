@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Equipment in Area</title>
+</head>
+<body>
+<h1>This page shows list of equipment by area</h1>
+
+    <ul>
+        {% for row in data %}
+        <li>{{ row }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/equipment_in_area/post/">Add equipment to area</a><br><br>
+    <a href="/equipment_in_area/get_equipment_by_area/">Get equipment by area</a><br><br>
+    <a href="/equipment_in_area/update_equipment_by_area/">Update equipment in area</a><br><br>
+    <a href="/equipment_in_area/delete_equipment_by_area/">Delete equipment in area</a><br><br>
+
+    <a href="/">Return to homepage</a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Find equipment by ID</h1>
+    <form action="/production_area/get_production_area/" method="POST">
+        <label for="id">Production area ID:</label>
+        <input type="text" id="id" name="id"><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <ul>
+        {{ data }}
+    </ul>
+
+    <a href="/production_area/">Return to production areas</a>
+</body>
+</html>

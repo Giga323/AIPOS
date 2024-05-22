@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update employee page</title>
+</head>
+<body>
+  <h1>Update Tech Failure</h1>
+    <form action="/tech_failure/update_tech_failure/" method="POST">
+        <label for="tech_failure_id">Tech failure ID:</label>
+        <input type="text" id="tech_failure_id" name="tech_failure_id"><br><br>
+
+        <label for="cause">Cause of tech failure:</label>
+        <input type="text" id="cause" name="cause"><br><br>
+
+        <label for="result">Result of tech failure:</label>
+        <input type="text" id="result" name="result"><br><br>
+
+        <label for="data">Data of tech failure:</label>
+        <input type="date" id="data" name="data"><br><br>
+
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" id="employee_id" name="employee_id"><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <a href="/tech_failure/">Return to tech failures</a>
+</body>
+</html>

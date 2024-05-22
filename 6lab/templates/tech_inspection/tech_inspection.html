@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Inspections</title>
+</head>
+<body>
+    <h1>This page shows list of tech inspections</h1>
+
+    <ul>
+        {% for row in data %}
+        <li>{{ row }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/tech_inspection/post/">Create tech inspection</a><br><br>
+    <a href="/tech_inspection/get_tech_inspection/">Find tech inspection</a><br><br>
+    <a href="/tech_inspection/update_tech_inspection/">Update tech inspection</a><br><br>
+    <a href="/tech_inspection/delete_tech_inspection/">Delete tech inspection</a><br><br>
+
+    <a href="/">Return to homepage</a>
+</body>
+</html>
